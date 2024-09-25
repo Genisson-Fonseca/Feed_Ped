@@ -18,49 +18,69 @@
 
   <style>
     body {
-      font-family: 'Open Sans', Arial, sans-serif;
+      font-family: 'Comic Sans MS', 'Poppins', sans-serif;
       background-color: #f7f7f7;
       margin: 0;
       padding: 0;
       text-align: center;
     }
     header {
-      background-color: #003b3b; /* Verde escuro inspirado no degrau inferior da logo */
+      background-color: #FFDD57; /* Amarelo vibrante */
       padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     header img {
-      width: 80px;
+      width: 100px;
       margin-right: 15px;
+      border-radius: 50%;
     }
     header h1 {
-      color: white;
-      font-size: 24px;
+      color: #4A90E2; /* Azul vibrante */
+      font-size: 28px;
       margin: 0;
     }
     main {
       padding: 40px 20px;
+      background-color: #E0F7FA; /* Azul claro */
+      border-radius: 25px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      font-size: 20px;
+      color: #333;
     }
     .link-list {
       list-style: none;
       padding: 0;
     }
     .link-list li {
-      margin: 15px 0;
+      margin: 20px 0;
     }
     .link-list a {
       text-decoration: none;
-      color: #e84c3d; /* Laranja avermelhado */
-      font-size: 18px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
+      color: white;
+      background-color: #FF6F61; /* Laranja avermelhado */
+      font-size: 20px;
+      padding: 15px 30px;
+      border-radius: 15px;
+      transition: background-color 0.3s, transform 0.3s;
+      display: inline-block;
     }
     .link-list a:hover {
-      background-color: #e84c3d;
-      color: white;
+      background-color: #4A90E2; /* Muda para azul no hover */
+      transform: scale(1.05);
+    }
+    .decorative-shapes {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px;
+      height: 100px;
+      background-color: #FFDD57;
+      border-radius: 50%;
+      z-index: -1;
     }
     footer {
       margin-top: 30px;
@@ -73,12 +93,12 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Logo da Great Schools">
+  <img src="logo-vertical.png" alt="Logo da Great Schools">
   <h1>Feed Pedagógico</h1>
 </header>
 
 <main>
-  <p>Bem-vindo ao Feed Pedagógico. Abaixo, você encontra os links para as atividades dos alunos:</p>
+  <p>Bem-vindo ao Feed Pedagógico! Clique nos links abaixo para ver os trabalhos dos alunos:</p>
   
   <ul class="link-list">
     <li><a href="#">Atividade de Matemática - Semana 1</a></li>
@@ -90,4 +110,8 @@
 </main>
 
 <footer>
-  <p>© 2024 Great Schools. Todos os direitos reservados
+  <p>© 2024 Great Schools. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
